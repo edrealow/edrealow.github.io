@@ -1,0 +1,61 @@
+html {
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    transition: background-color ease 0.5s;
+    background-color: #AEB0D6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+    }
+ } 
+
+.flex-buttontext {
+    text-align: center;
+
+    color: white;
+    font-size: 150%;
+}
+
+.flex-buttons {
+    animation-delay: 2.8s;
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+    width: 1300px;
+    margin-bottom: 7%;
+    
+}
+
+.flex-buttons :hover {
+    transform: translate3D(0, -1px, 0) scale(1.07);
+    cursor: pointer;
+}
+
